@@ -29,7 +29,7 @@ export class CustomerService {
     }
 
     getIoc() {
-        return this.http.get<any>('http://localhost/iocs')
+        return this.http.get<any>('http://10.12.20.203:3000/iocs')
             .toPromise()
             .then(res => res.data as Customer[])
             .then(data => data);

@@ -40,6 +40,7 @@ export class ApiService {
 
 
   getById(url: string, id: string, queryParams?: Record<string, any>) {
+    console.log(this.apiBaseUrl)
     return this.http.get(`${this.apiBaseUrl}${url}/${id}`, {
       headers,
       params: this.getParams(queryParams),

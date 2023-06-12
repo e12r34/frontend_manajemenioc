@@ -26,11 +26,11 @@
                                 <p-columnFilter type="text" matchMode="contains" field="type" display="menu" [showMatchModes]="false" [showOperator]="false" [showAddButton]="false">
 									<ng-template pTemplate="header">
 										<div class="px-3 pt-3 pb-0">
-											<span class="font-bold">Agent Picker</span>
+											<span class="font-bold">Jenis IOC</span>
 										</div>
 									</ng-template>
 									<ng-template pTemplate="filter" let-value let-filter="filterCallback">
-										<p-multiSelect [ngModel]="value" [options]="category" placeholder="Any" (onChange)="filter($event.value)" optionLabel="">
+										<p-multiSelect [ngModel]="value" [options]="category" placeholder="Any" (onChange)="filter($event.value)" optionLabel="Pilih">
 											<ng-template let-option pTemplate="item">
 												<div class="p-multiselect-representative-option">
 													<span class="ml-2">{{option}}</span>
