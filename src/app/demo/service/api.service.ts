@@ -8,7 +8,7 @@ const headers = new HttpHeaders()
   providedIn: 'root',
 })
 export class ApiService {
-    apiBaseUrl:string="http://localhost"
+    apiBaseUrl:string="http://10.12.20.203:3000"
 
     constructor(private http: HttpClient) {
 
